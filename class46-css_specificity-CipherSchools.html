@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* specificity order is inline style attribute>id>class>elements */
+        /* inline style attributes and writing !important beside property is not good practice */
+        h1{
+            color: green;
+        }
+        h1.hero{
+            color: red ;
+        } 
+        .heading{
+            color: magenta ;
+        } 
+        /* h1#hero{
+            color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <h1 id='hero'class="hero heading">
+        hello
+    </h1>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selector</title>
+    <style>
+        input[type='text']{
+            color: red;
+        }
+        input[type='password']{
+            color: red;
+        }
+        a[href*='google']{/*which has google in it*/
+            color: red;
+        }
+        a[href*='fb']{
+            color: blue;
+        }
+
+        a[href^='https']{/*starting with https*/
+            color: green;
+        }
+        a[href$='.com']{
+            color:red;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.google.co.uk" target="_blank">Google Britain</a>
+    <a href="https://www.fb.com" target="_blank">Facebook</a>
+    <br><br>
+    <input type="text" name="" id="">
+    <br><br>
+    <input type="text" name="" id="">
+    <br><br>
+    <input type="password" name="" id="">
+
+</body>
+
+</html>

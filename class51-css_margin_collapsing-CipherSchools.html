@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin collapsing</title>
+    <style>
+        .box1, .box2{
+            border: 2px solid red;
+            margin: 20px;
+            padding: 20px;
+        }
+        .box1{
+            margin-bottom: 40px;
+        }
+        .box2{
+            /* jo badaa hogaa usi kaa margin count hogaa */
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam culpa voluptas fugiat magni voluptatem, labore quia repellendus rem, nostrum, mollitia illo perferendis qui odit deleniti tempora esse a voluptates perspiciatis quibusdam quas vitae! Placeat illo et quo, commodi provident laudantium a! Laboriosam, magni. Eum ipsa possimus, quod, debitis nam, fuga aspernatur necessitatibus ipsam perspiciatis provident eos voluptas nostrum atque voluptatem. Laborum, tempore doloremque! Ex saepe iure, optio temporibus praesentium officiis amet quisquam error nostrum nobis sit et doloremque quaerat voluptatum numquam fuga dicta dolorem facere odit aut consequuntur beatae minima tempora cumque. Corporis alias aperiam dolor voluptatum laborum eum assumenda!</p>
+    </div>
+    <div class="box2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, illum. Velit at consectetur minus laborum reiciendis nobis molestiae explicabo dolorem quasi? Enim quasi sapiente fuga impedit accusantium qui eligendi! Consequatur maiores praesentium nisi laboriosam perspiciatis, sit commodi magnam ratione, quis consectetur explicabo odio sapiente autem beatae distinctio error consequuntur reprehenderit inventore placeat quasi! Pariatur molestias et, accusantium repellat natus quas id facilis voluptates eos vel obcaecati. Perspiciatis, sequi? Voluptatem iste esse repellat laudantium libero unde ex, velit facere eum odio ea necessitatibus repellendus, possimus nesciunt saepe error! Adipisci quidem nemo atque quos, cum, totam et dignissimos animi sint iste nesciunt!</p>
+    </div>
+</body>
+</html>
